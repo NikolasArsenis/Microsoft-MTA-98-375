@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Outdoor Pictures</title>
+    <script type="text/javascript">
+        function add_image(src, width, height, alt) {
+            var image = document.createElement("img");
+            image.src = src;
+            image.width = width;
+            image.height = height;
+            image.alt = alt;
+            document.body.appendChild(image);
+
+        }
+    </script>
+</head>
+
+<body onload="add_svg('test',100)">
+    <h2>Click each sport to see a picture related to that sport.</h2>
+    <button type="button" onclick="add_image('basketball.png', 192, 192, 'basketball')">Basketball</button>
+    <button type="button" onclick="add_image('horseshoes.jpg', 192, 192, 'basketball')">Horseshoes</button>
+    <button type="button" onclick="add_image('Tennis.jpg', 192, 192, 'tennis')">Tennis</button>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Logo Possibilities</title>
+        <style>
+            
+            div > div {background-color:  #2d17ec;
+                       color:  #ffffff;
+                       border:  2px solid #00ff21;
+                       width: 200px;
+                       height: 60px;
+                       padding:  2em;
+                       margin-bottom:  1em;
+                       font-family: Arial, sans-serif;
+            }
+           .secondpart {
+                transition-property: opacity;
+                transition-duration: 2s;
+                transition-delay: 1s;
+                transition-timing-function: linear;
+            }
+            .partone, .secondpart:hover .parttwo {opacity:  1;
+                                                  
+            }
+            .secondpart:hover .partone, .secondpart .parttwo {opacity:  .5;
+                                                              
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="secondpart">
+            <div class="partone">THE Recreation Center</div>
+            <div class="parttwo">REcreate yourself</div>
+        </div>
+        
+    
+    </body>
+</html>

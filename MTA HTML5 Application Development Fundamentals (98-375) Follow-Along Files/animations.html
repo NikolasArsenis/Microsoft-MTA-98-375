@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Logo Possibilities</title>
+    <style>
+        div>div {
+            background-color: #2d17ec;
+            color: #ffffff;
+            border: 2px solid #00ff21;
+            width: 200px;
+            height: 60px;
+            padding: 2em;
+            margin-bottom: 1em;
+            font-family: Arial, sans-serif;
+        }
+        
+        .fade {
+            animation-duration: 3s;
+            animation-delay: .5s;
+            animation-timing-function: ease-out;
+        }
+        
+        .fade:hover {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s 2s, opacity 2s linear;
+        }
+        /* instead of  
+        .fade:hover {
+            animation-name:fadeout;
+        }
+        @keyframes fadeout {from{opacity:1;}}
+        to {opacity:0;}*/
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="fade">THE Recreation Center</div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Information Form</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    <body>
+<div id="inforequest">
+     <form id="info" method="post" action="">
+         <fieldset>
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" /> <br/>
+         <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" /> <br/>
+         <label for="email">Email Address</label>
+      <input type="email" id="email" required/> <br/>
+         <label for="phone">Phone Number</label>
+      <input type="text" id="phone" pattern="[0-9] {3}-[0-9] {3}-[0-9] {4}" placeholder="###-###-####"/> <br/>
+             <label for="hearing">How did you hear about us?</label>
+             <select id="hearing">
+               <option value="TV">TV</option>
+                 <option value="Radio">Radio</option>
+                 <option value="Other">Other</option>
+                 </select> <br/>
+        <label for="activity">What are your favorite activities?</label>
+        <input type="checkbox" name="activity" value="Working out">Working out </input>
+         <input type="checkbox" name="activity" value="Playing a Sport">Playing a sport </input>
+         <input type="checkbox" name="activity" value="Walking trails">Walking trails </input>
+    <label for="interest">Areas of Interest</label>
+        <textarea name="interest"></textarea>
+        <input type="submit" name="submit" id="submit" value="Submit" />
+       
+             
+             
+                   </fieldset>
+    </form>
+</div>   
+    </body>
+</html>

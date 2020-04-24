@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Drawing examples</title>
+
+    <script>
+        function loadCanvas() {
+            var cvs = document.getElementById("canvasTest");
+            context = cvs.getContext("2d");
+            context.strokeStyle = "rgb(255,0,0)";
+            context.strokeRect(10, 20, 100, 100)
+        }
+
+        function loadMe() {
+            var cvs = document.getElementById("canvasTest");
+            context = cvs.getContext("2d");
+            context.clearRect(10, 20, 100, 100)
+            context.fillStyle = "rgb(255,0,0)";
+            context.fillRect(15, 25, 105, 105)
+        }
+    </script>
+</head>
+
+<body onload="loadCanvas();">
+    <canvas id="canvasTest" width="200" height="200">
+</canvas>
+    <button type="button" onclick="loadMe()">Click to move the box</button>
+    <br/> Tennis ball <br/>
+    <svg id="tennisball" height="100">
+    <circle id="greenball" cx="40" cy="40" r="40" fill="#88FF88" />
+</svg>
+
+</body>
+
+</html>

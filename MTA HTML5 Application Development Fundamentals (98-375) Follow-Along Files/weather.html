@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Weather Forecast</title>
+    </head>
+    <body>
+        <button type="button" onclick="loadWeather()">See the current weather</button>
+
+        <script type="text/javascript">
+            function loadWeather() {
+                var weather = new XMLHttpRequest();
+                weather.open("GET", "weather.txt", true);
+                weather.onload = function () {
+                    document.getElementById("forecast").innerHTML = weather.responseText;
+                }
+                weather.send();
+            }
+
+        </script>
+ <div id="forecast"></div>
+    </body>
+</html>

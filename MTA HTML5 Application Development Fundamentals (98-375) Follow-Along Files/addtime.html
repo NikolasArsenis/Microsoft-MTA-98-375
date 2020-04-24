@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Adding Date Last Modified</title>
+
+    <script type="text/javascript">
+        function addLastMod() {
+            var firstpar = document.getElementById("secondpar");
+            var newpar = document.createElement("p");
+            var newpartext = "This document was last modified: " + document.lastModified;
+            var newContent = document.createTextNode(newpartext);
+            newpar.appendChild(newContent);
+            document.body.insertBefore(newpar, secondpar);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Learning JavaScript</h1>
+    <p id="firstpar">Click the button below to display the date and time this document was last modified.</p>
+    <button type="button" onclick="addLastMod()">Click for message</button>
+    <p id="secondpar"></p>
+</body>
+
+</html>

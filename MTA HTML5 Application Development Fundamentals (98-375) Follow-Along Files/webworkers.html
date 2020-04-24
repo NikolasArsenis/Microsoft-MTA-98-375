@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Worker Example</title>
+        <script>
+            var worker = new Worker('webWorkerExample.js');
+            var msg = 'this fine Web Worker example';
+            worker.postMessage(msg);
+
+            worker.onmessage = function (event) {
+                alert(event.data);
+            };
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

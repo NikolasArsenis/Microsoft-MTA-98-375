@@ -1,0 +1,26 @@
+body {
+    font-family: Cambria, 'Times New Roman',serif;
+    font-size:  12pt;
+    color:  #4f0303;
+}
+h1, h2, h3 {font-family: Calibri, Arial, sans-serif;
+            color:  #024a2b;
+            text-align:  center;    
+}
+aside {
+    background-color:  #dfdcdc;
+}
+.recreate {font-style:  bold;
+           color: #33FF33;    
+}
+#inforequest {
+    border: 2px;
+    border-color: #880088;
+}
+/*
+@font-face
+{
+  font-family:  recreation;
+  src: uri('recreation.ttf')  
+}
+    */

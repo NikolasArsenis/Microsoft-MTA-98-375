@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Items on Sale</title>
+    <script type="text/javascript">
+        itemData = "Tennis Racket: 39.99; Tennis Balls: 3.99; Horseshoes: 24.99; Disc Golf Frisbees: 19.99; 2-lb weights: 2.99; 15-lb weights: 9.99";
+        itemSale = "Tennis Racket";
+
+        function getItem() {
+            var para = document.getElementById("saleitem");
+            var itemList = itemData.split(';');
+            
+            for (x = 0; x < itemList.length; x++) {
+                items = itemList[x].split(':');
+
+                var item = items[0].trim()
+                if (item == itemSale) {
+                    var msg = "Our feature item: " + item + " is selling for: " + items[1].trim();
+                    saleitem.innerHTML = msg;
+                }
+            }
+
+        }
+    </script>
+    </head>
+    <body onload="getItem();">
+        <h1>Featured sale item</h1>
+        <p id="saleitem"></p></p>
+    </body>
+</html>

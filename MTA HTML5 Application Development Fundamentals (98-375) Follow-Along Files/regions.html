@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Text into regions</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style>
+            #sourcetext {
+                -ms-flow-into: main;
+                
+            }
+            .region {
+                -ms-flow-from: main;
+                margin:  5px;
+                background:  #fce6d6;
+                padding:  10px;
+                region-overflow: auto;
+                overflow: visible;
+            }
+            #left {
+                width:  30%;
+                height: 50%;
+                float:  left;
+            }
+            #center {
+                width:  30%;
+                height: 50%;
+                float: left;
+            }
+            #right {
+                width:  30%;
+                height: 50%;
+                float: left;
+            }
+            #regionarea {
+                position:  relative;
+                padding:  20px;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe id="sourcetext" src="sourcetext.html"></iframe>
+ <div id="regionarea">
+    <div id="left" class="region"></div>
+     <div id="center" class="region"></div>
+     <div id="right" class="region"></div>
+ </div>
+    </body>
+</html>
